@@ -12,13 +12,14 @@ gtag('config', 'AW-812342700');
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Tarifs — Dr. Philippe Sillard · Médecine Esthétique Genève</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{--teal:#4CA7AB;--teal2:#82C1C3;--teal-pale:#EEF7F7;--teal-dark:#3A8C8F;--grey:#808184;--text:#1C1C1C;--wa:#25D366}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:"Jost",sans-serif;color:var(--text);background:#fff;overflow-x:hidden}
-h1,h2,h3{font-family:"Cormorant Garamond",serif}
+body{font-family:"Inter",sans-serif;color:var(--text);background:#fff;overflow-x:hidden;font-weight:300;letter-spacing:.005em}
+p{font-weight:400}
+h1,h2,h3{font-family:"Fraunces",serif;font-weight:400;letter-spacing:-.01em}
 header{position:fixed;top:0;left:0;right:0;z-index:100;height:70px;background:#fff;border-bottom:1px solid rgba(0,0,0,.07);display:flex;align-items:center;justify-content:space-between;padding:0 52px;transition:box-shadow .3s}
 header.scrolled{box-shadow:0 2px 20px rgba(0,0,0,.08)}
 .logo-link{display:flex;align-items:center;text-decoration:none}
@@ -36,8 +37,9 @@ nav{display:flex;align-items:center;gap:36px}
 .btn-wa svg{width:19px;height:19px;fill:#fff}
 .btn-teal{display:inline-flex;align-items:center;background:transparent;color:var(--teal);text-decoration:none;padding:14px 30px;border-radius:50px;font-size:.9rem;font-weight:500;border:1.5px solid var(--teal);transition:all .2s}
 .btn-teal:hover{background:var(--teal);color:#fff}
-.eyebrow{display:block;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);font-weight:500;margin-bottom:14px}
-.section-title{font-family:"Cormorant Garamond",serif;font-size:clamp(2rem,3vw,2.8rem);font-weight:300;line-height:1.15;margin-bottom:12px}
+.eyebrow{display:flex;align-items:center;gap:10px;font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:var(--teal-dark);font-weight:500;margin-bottom:16px}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--teal-dark);opacity:.5}
+.section-title{font-family:"Fraunces",serif;font-size:clamp(2rem,3vw,2.8rem);font-weight:300;line-height:1.15;margin-bottom:12px}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
 .reveal.visible{opacity:1;transform:none}
 .wa-float{position:fixed;bottom:28px;right:28px;z-index:200;width:58px;height:58px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(37,211,102,.45);text-decoration:none;animation:waPulse 2.5s infinite}
@@ -46,7 +48,7 @@ nav{display:flex;align-items:center;gap:36px}
 footer{background:#2C2C2C}
 .footer-top{display:grid;grid-template-columns:1fr 1fr;gap:60px;padding:60px 72px}
 .footer-brand p,.footer-contact p{font-size:.83rem;line-height:1.85;color:rgba(255,255,255,.45)}
-.footer-contact h4{font-family:"Cormorant Garamond",serif;font-size:1rem;font-weight:500;color:rgba(255,255,255,.8);letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
+.footer-contact h4{font-family:"Fraunces",serif;font-size:1rem;font-weight:500;color:rgba(255,255,255,.8);letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
 .footer-contact a{color:rgba(255,255,255,.45);text-decoration:none}
 .footer-contact a:hover{color:#82C1C3}
 .footer-bottom{background:#1E1E1E;padding:18px 72px;display:flex;justify-content:space-between;font-size:.7rem;letter-spacing:.04em;color:rgba(255,255,255,.25)}
@@ -57,7 +59,8 @@ footer{background:#2C2C2C}
 .page-hero{padding:120px 72px 0;background:var(--teal-pale);border-bottom:1px solid rgba(76,167,171,.1)}
 .hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-bottom:56px}
 .hero-copy h1{font-size:clamp(2.3rem,4vw,3.4rem);font-weight:300;line-height:1.12;margin-bottom:16px}
-.hero-copy p.lede{font-size:.95rem;color:var(--grey);line-height:1.75;margin-bottom:28px;max-width:440px}
+.hero-copy h1 em{font-style:italic;font-weight:400;color:var(--teal-dark)}
+.hero-copy p.lede{font-size:.95rem;font-weight:400;color:var(--grey);line-height:1.75;margin-bottom:28px;max-width:440px}
 .hero-trust{display:flex;align-items:center;gap:10px;margin-top:22px;font-size:.76rem;color:var(--teal-dark);letter-spacing:.02em}
 .hero-trust svg{width:16px;height:16px;fill:var(--teal-dark);flex-shrink:0}
 .btn-hero-cta{display:inline-flex;align-items:center;gap:12px;background:var(--wa);color:#fff;text-decoration:none;padding:19px 38px;border-radius:50px;font-size:1rem;font-weight:500;box-shadow:0 12px 34px rgba(37,211,102,.35);transition:transform .2s,box-shadow .2s}
@@ -75,13 +78,29 @@ footer{background:#2C2C2C}
 }
 
 .tw{max-width:1020px;margin:0 auto;padding:80px 72px}
-.tgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.tc{background:#fff}.th{}
-.tr{display:flex;justify-content:space-between;align-items:baseline;padding:10px 20px;font-size:.83rem;border-bottom:1px solid rgba(76,167,171,.05);gap:12px;color:#444}
-.tr:last-child{border-bottom:none}
-.tp{font-family:"Cormorant Garamond",serif;font-size:1.1rem;font-weight:600;color:var(--teal);white-space:nowrap;flex-shrink:0}
-.tc.full{grid-column:span 2}
-.tc.full-grid .tr-grid{display:grid;grid-template-columns:1fr 1fr 1fr;padding:4px 0}
+
+/* ===== Carrousel tarifs — cards défilantes ===== */
+.tarifs-carousel-wrap{position:relative;display:flex;align-items:center;gap:10px}
+.tcarousel{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:8px 2px 14px;scroll-padding-left:2px}
+.tcarousel::-webkit-scrollbar{display:none}
+.tcard{flex:0 0 78%;max-width:300px;scroll-snap-align:start;background:#fff;border:1px solid rgba(76,167,171,.15);border-radius:16px;overflow:hidden;box-shadow:0 6px 22px rgba(28,28,28,.05);display:flex;flex-direction:column}
+.tcard.featured{border:1.5px solid var(--teal);box-shadow:0 10px 30px rgba(76,167,171,.18)}
+.tcard-head{position:relative;background:var(--teal-pale);padding:18px 20px 16px;border-bottom:1px solid rgba(76,167,171,.12)}
+.tcard.featured .tcard-head{background:var(--teal)}
+.tcard-head h3{font-family:'Fraunces',serif;font-size:1.18rem;font-weight:500;letter-spacing:-.005em;color:var(--teal-dark);line-height:1.25}
+.tcard.featured .tcard-head h3{color:#fff}
+.tcard-badge{display:inline-block;background:#fff;color:var(--teal-dark);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;padding:3px 10px;border-radius:20px;margin-bottom:8px}
+.tcard-body{padding:6px 20px 18px;flex:1}
+.tcard-body .tr{display:flex;justify-content:space-between;align-items:baseline;padding:11px 0;font-size:.83rem;font-weight:400;border-bottom:1px solid rgba(76,167,171,.08);gap:12px;color:#444}
+.tcard-body .tr:last-child{border-bottom:none}
+.tcard-body .tp{font-family:'Fraunces',serif;font-style:italic;font-size:1.2rem;font-weight:500;color:var(--teal-dark);white-space:nowrap;flex-shrink:0}
+.car-arrow{flex:none;width:44px;height:44px;border-radius:50%;background:#fff;border:1.5px solid rgba(76,167,171,.3);color:var(--teal-dark);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s,transform .15s}
+.car-arrow:hover{background:var(--teal-pale);transform:scale(1.06)}
+.car-arrow svg{width:18px;height:18px}
+.carousel-hint{text-align:center;font-size:.72rem;color:var(--grey);letter-spacing:.03em;margin-top:2px;margin-bottom:44px}
+@media(min-width:640px){.tcard{flex-basis:47%}}
+@media(min-width:960px){.tcard{flex-basis:31.5%}.carousel-hint{display:none}}
+@media(max-width:639px){.car-arrow{display:none}.tarifs-carousel-wrap{gap:0}}
 
 /* ===== CTA de bas de page — agrandi ===== */
 .tarif-cta{text-align:center;padding:56px 40px 90px;background:var(--teal-pale);border-radius:22px;margin-top:20px}
@@ -125,7 +144,7 @@ footer{background:#2C2C2C}
   <div class="hero-inner">
     <div class="hero-copy reveal visible">
       <span class="eyebrow">Tarifs</span>
-      <h1>Tous nos prix en CHF</h1>
+      <h1>Tous nos <em>prix</em> en CHF</h1>
       <p class="lede">La consultation initiale (CHF 100) est déduite du soin effectué lors de la même visite. Un devis personnalisé vous est remis avant tout traitement.</p>
       <a onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'whatsapp_rdv_hero'});" href="https://wa.me/41789053650?text=Bonjour%20Dr.%20Sillard%2C%20je%20souhaite%20prendre%20rendez-vous." class="btn-hero-cta">
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.847L0 24l6.347-1.498A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.847 0-3.587-.498-5.089-1.371l-.361-.215-3.766.89.928-3.668-.234-.374A9.958 9.958 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
@@ -144,34 +163,70 @@ footer{background:#2C2C2C}
 </div>
 
 <div class="tw">
-  <div class="tgrid"><div class="tc" style="border:1px solid rgba(76,167,171,.13);border-radius:13px;overflow:hidden;"><div class="th" style="background:var(--teal-pale);color:var(--teal);padding:13px 20px;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;border-bottom:1px solid rgba(76,167,171,.1)">Consultation</div><div class="tr"><span>Première consultation — déduite des soins effectués</span><span class="tp">100</span></div></div>
-<div class="tc" style="border:1.5px solid var(--teal);box-shadow:0 4px 20px rgba(76,167,171,.12);border-radius:13px;overflow:hidden;"><div class="th" style="background:var(--teal);color:#fff;padding:13px 20px;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;border-bottom:1px solid rgba(76,167,171,.1)">✦ Toxine botulique</div><div class="tr"><span>1 dose — partie du visage ou ovale</span><span class="tp">450</span></div><div class="tr"><span>2 doses — haut du visage complet ou ovale + cou</span><span class="tp">800</span></div><div class="tr"><span>Aisselles (hyperhydrose)</span><span class="tp">1 000</span></div></div>
-<div class="tc" style="border:1px solid rgba(76,167,171,.13);border-radius:13px;overflow:hidden;"><div class="th" style="background:var(--teal-pale);color:var(--teal);padding:13px 20px;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;border-bottom:1px solid rgba(76,167,171,.1)">Comblement des rides — Acide hyaluronique</div><div class="tr"><span>1 dose</span><span class="tp">450</span></div><div class="tr"><span>2 doses</span><span class="tp">800</span></div><div class="tr"><span>1 dose gamme SuperVolume</span><span class="tp">600</span></div></div>
-<div class="tc" style="border:1px solid rgba(76,167,171,.13);border-radius:13px;overflow:hidden;"><div class="th" style="background:var(--teal-pale);color:var(--teal);padding:13px 20px;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;border-bottom:1px solid rgba(76,167,171,.1)">Anti-relâchement — Profhilo &amp; Radiofréquences HD</div><div class="tr"><span>Profhilo — Forfait 2 séances visage</span><span class="tp">1 000</span></div><div class="tr"><span>Profhilo — Forfait 2 séances corps</span><span class="tp">1 800</span></div><div class="tr"><span>Radiofréquences HD — 3 séances visage-cou</span><span class="tp">1 500</span></div><div class="tr"><span>Radiofréquences HD — 3 séances ovale-cou ou cou-décolleté</span><span class="tp">1 000</span></div></div>
-<div class="tc" style="border:1px solid rgba(76,167,171,.13);border-radius:13px;overflow:hidden;"><div class="th" style="background:var(--teal-pale);color:var(--teal);padding:13px 20px;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;border-bottom:1px solid rgba(76,167,171,.1)">Laser CO2 Fractionné</div><div class="tr"><span>1 séance visage</span><span class="tp">1 000</span></div><div class="tr"><span>1 séance mains</span><span class="tp">500</span></div></div>
-<div class="tc" style="border:1px solid rgba(76,167,171,.13);border-radius:13px;overflow:hidden;"><div class="th" style="background:var(--teal-pale);color:var(--teal);padding:13px 20px;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;border-bottom:1px solid rgba(76,167,171,.1)">Mésothérapie / Carboxythérapie</div><div class="tr"><span>Mésothérapie — 1 séance visage + cou</span><span class="tp">250</span></div><div class="tr"><span>Mésothérapie — 2 séances visage + cou</span><span class="tp">400</span></div><div class="tr"><span>Carboxythérapie — 1 séance yeux</span><span class="tp">100</span></div><div class="tr"><span>Carboxythérapie — Abonnement 10 séances</span><span class="tp">800</span></div></div>
-<div class="tc" style="border:1px solid rgba(76,167,171,.13);border-radius:13px;overflow:hidden;"><div class="th" style="background:var(--teal-pale);color:var(--teal);padding:13px 20px;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;border-bottom:1px solid rgba(76,167,171,.1)">Skinboosters &amp; Peeling</div><div class="tr"><span>Skinboosters — 1 séance (3cc)</span><span class="tp">450</span></div><div class="tr"><span>Peeling TCA 30% — 4 séances + crème incluse</span><span class="tp">1 200</span></div><div class="tr"><span>Peeling TCA 15% — 1 séance</span><span class="tp">280</span></div><div class="tr"><span>Peeling acides de fruits — 1 séance</span><span class="tp">200</span></div><div class="tr"><span>Peeling acides de fruits — Forfait 3 séances</span><span class="tp">500</span></div></div>
-<div class="tc" style="border:1px solid rgba(76,167,171,.13);border-radius:13px;overflow:hidden;"><div class="th" style="background:var(--teal-pale);color:var(--teal);padding:13px 20px;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;border-bottom:1px solid rgba(76,167,171,.1)">Lifting paupières — PLEXR</div><div class="tr"><span>1 séance avec kit récupération</span><span class="tp">1 100</span></div><div class="tr"><span>2 séances avec 1 kit</span><span class="tp">1 600</span></div><div class="tr"><span>Séance supplémentaire</span><span class="tp">300</span></div></div>
-<div class="tc" style="border:1px solid rgba(76,167,171,.13);border-radius:13px;overflow:hidden;"><div class="th" style="background:var(--teal-pale);color:var(--teal);padding:13px 20px;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;border-bottom:1px solid rgba(76,167,171,.1)">Perte de cheveux — Mésothérapie + LED</div><div class="tr"><span>1 séance</span><span class="tp">200</span></div><div class="tr"><span>Forfait 12+2 séances + 2 mois compléments</span><span class="tp">2 400</span></div><div class="tr"><span>Facteurs de croissance — Forfait 10 séances</span><span class="tp">2 800</span></div></div>
-<div class="tc" style="border:1px solid rgba(76,167,171,.13);border-radius:13px;overflow:hidden;"><div class="th" style="background:var(--teal-pale);color:var(--teal);padding:13px 20px;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;border-bottom:1px solid rgba(76,167,171,.1)">Cernes — Carboxythérapie</div><div class="tr"><span>1 séance yeux</span><span class="tp">100</span></div><div class="tr"><span>Abonnement 10 séances</span><span class="tp">800</span></div></div>
-<div class="tc" style="border:1px solid rgba(76,167,171,.13);border-radius:13px;overflow:hidden;"><div class="th" style="background:var(--teal-pale);color:var(--teal);padding:13px 20px;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;border-bottom:1px solid rgba(76,167,171,.1)">Rajeunissement des mains</div><div class="tr"><span>Acide hyaluronique — comblement, hydratation</span><span class="tp">500</span></div></div>
-<div class="tc" style="border:1px solid rgba(76,167,171,.13);border-radius:13px;overflow:hidden;"><div class="th" style="background:var(--teal-pale);color:var(--teal);padding:13px 20px;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;border-bottom:1px solid rgba(76,167,171,.1)">Cellulite &amp; Lipocryothérapie</div><div class="tr"><span>1 séance cellulite</span><span class="tp">200</span></div><div class="tr"><span>Forfait 11 séances</span><span class="tp">2 000</span></div><div class="tr"><span>Lipocryothérapie — 1h, 1 tête</span><span class="tp">400</span></div><div class="tr"><span>Lipocryothérapie — 1h, 2 têtes</span><span class="tp">600</span></div></div>
-  <div class="tc full" style="border:1px solid rgba(76,167,171,.13);border-radius:13px;overflow:hidden;">
-  <div class="th" style="background:var(--teal-pale);color:var(--teal);padding:13px 20px;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;border-bottom:1px solid rgba(76,167,171,.1)">Épilation définitive laser</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;padding:4px 0">
-    <div class="tr">Lèvre / moustache / oreilles<span class="tp">120</span></div>
-    <div class="tr">Aisselles<span class="tp">300</span></div>
-    <div class="tr">Demi-jambes<span class="tp">400</span></div>
-    <div class="tr">Jambes entières<span class="tp">600</span></div>
-    <div class="tr">Maillot<span class="tp">300</span></div>
-    <div class="tr">Maillot brésilien<span class="tp">380</span></div>
-    <div class="tr">Dos complet<span class="tp">600</span></div>
-    <div class="tr">Torse / abdomen<span class="tp">400</span></div>
-    <div class="tr">Barbe<span class="tp">300</span></div>
+  <div class="tarifs-carousel-wrap reveal">
+    <button class="car-arrow car-prev" onclick="tarifsScroll(-1)" aria-label="Voir les tarifs précédents">
+      <svg viewBox="0 0 24 24"><path d="M15.5 19l-7-7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="tcarousel" id="tarifsCarousel">
+    <div class="tcard">
+      <div class="tcard-head"><h3>Consultation</h3></div>
+      <div class="tcard-body"><div class="tr"><span>Première consultation — déduite des soins effectués</span><span class="tp">100</span></div></div>
+    </div>
+    <div class="tcard featured">
+      <div class="tcard-head"><span class="tcard-badge">Populaire</span><h3>Toxine botulique</h3></div>
+      <div class="tcard-body"><div class="tr"><span>1 dose — partie du visage ou ovale</span><span class="tp">450</span></div><div class="tr"><span>2 doses — haut du visage complet ou ovale + cou</span><span class="tp">800</span></div><div class="tr"><span>Aisselles (hyperhydrose)</span><span class="tp">1 000</span></div></div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-head"><h3>Comblement des rides — Acide hyaluronique</h3></div>
+      <div class="tcard-body"><div class="tr"><span>1 dose</span><span class="tp">450</span></div><div class="tr"><span>2 doses</span><span class="tp">800</span></div><div class="tr"><span>1 dose gamme SuperVolume</span><span class="tp">600</span></div></div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-head"><h3>Anti-relâchement — Profhilo &amp; Radiofréquences HD</h3></div>
+      <div class="tcard-body"><div class="tr"><span>Profhilo — Forfait 2 séances visage</span><span class="tp">1 000</span></div><div class="tr"><span>Profhilo — Forfait 2 séances corps</span><span class="tp">1 800</span></div><div class="tr"><span>Radiofréquences HD — 3 séances visage-cou</span><span class="tp">1 500</span></div><div class="tr"><span>Radiofréquences HD — 3 séances ovale-cou ou cou-décolleté</span><span class="tp">1 000</span></div></div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-head"><h3>Laser CO2 Fractionné</h3></div>
+      <div class="tcard-body"><div class="tr"><span>1 séance visage</span><span class="tp">1 000</span></div><div class="tr"><span>1 séance mains</span><span class="tp">500</span></div></div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-head"><h3>Mésothérapie / Carboxythérapie</h3></div>
+      <div class="tcard-body"><div class="tr"><span>Mésothérapie — 1 séance visage + cou</span><span class="tp">250</span></div><div class="tr"><span>Mésothérapie — 2 séances visage + cou</span><span class="tp">400</span></div><div class="tr"><span>Carboxythérapie — 1 séance yeux</span><span class="tp">100</span></div><div class="tr"><span>Carboxythérapie — Abonnement 10 séances</span><span class="tp">800</span></div></div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-head"><h3>Skinboosters &amp; Peeling</h3></div>
+      <div class="tcard-body"><div class="tr"><span>Skinboosters — 1 séance (3cc)</span><span class="tp">450</span></div><div class="tr"><span>Peeling TCA 30% — 4 séances + crème incluse</span><span class="tp">1 200</span></div><div class="tr"><span>Peeling TCA 15% — 1 séance</span><span class="tp">280</span></div><div class="tr"><span>Peeling acides de fruits — 1 séance</span><span class="tp">200</span></div><div class="tr"><span>Peeling acides de fruits — Forfait 3 séances</span><span class="tp">500</span></div></div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-head"><h3>Lifting paupières — PLEXR</h3></div>
+      <div class="tcard-body"><div class="tr"><span>1 séance avec kit récupération</span><span class="tp">1 100</span></div><div class="tr"><span>2 séances avec 1 kit</span><span class="tp">1 600</span></div><div class="tr"><span>Séance supplémentaire</span><span class="tp">300</span></div></div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-head"><h3>Perte de cheveux — Mésothérapie + LED</h3></div>
+      <div class="tcard-body"><div class="tr"><span>1 séance</span><span class="tp">200</span></div><div class="tr"><span>Forfait 12+2 séances + 2 mois compléments</span><span class="tp">2 400</span></div><div class="tr"><span>Facteurs de croissance — Forfait 10 séances</span><span class="tp">2 800</span></div></div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-head"><h3>Cernes — Carboxythérapie</h3></div>
+      <div class="tcard-body"><div class="tr"><span>1 séance yeux</span><span class="tp">100</span></div><div class="tr"><span>Abonnement 10 séances</span><span class="tp">800</span></div></div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-head"><h3>Rajeunissement des mains</h3></div>
+      <div class="tcard-body"><div class="tr"><span>Acide hyaluronique — comblement, hydratation</span><span class="tp">500</span></div></div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-head"><h3>Cellulite &amp; Lipocryothérapie</h3></div>
+      <div class="tcard-body"><div class="tr"><span>1 séance cellulite</span><span class="tp">200</span></div><div class="tr"><span>Forfait 11 séances</span><span class="tp">2 000</span></div><div class="tr"><span>Lipocryothérapie — 1h, 1 tête</span><span class="tp">400</span></div><div class="tr"><span>Lipocryothérapie — 1h, 2 têtes</span><span class="tp">600</span></div></div>
+    </div>
+    <div class="tcard">
+      <div class="tcard-head"><h3>Épilation définitive laser</h3></div>
+      <div class="tcard-body"><div class="tr"><span>Lèvre / moustache / oreilles</span><span class="tp">120</span></div><div class="tr"><span>Aisselles</span><span class="tp">300</span></div><div class="tr"><span>Demi-jambes</span><span class="tp">400</span></div><div class="tr"><span>Jambes entières</span><span class="tp">600</span></div><div class="tr"><span>Maillot</span><span class="tp">300</span></div><div class="tr"><span>Maillot brésilien</span><span class="tp">380</span></div><div class="tr"><span>Dos complet</span><span class="tp">600</span></div><div class="tr"><span>Torse / abdomen</span><span class="tp">400</span></div><div class="tr"><span>Barbe</span><span class="tp">300</span></div></div>
+    </div>
+    </div>
+    <button class="car-arrow car-next" onclick="tarifsScroll(1)" aria-label="Voir les tarifs suivants">
+      <svg viewBox="0 0 24 24"><path d="M8.5 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
   </div>
-</div>
-  </div>
-  <div class="tarif-cta reveal">
+  <p class="carousel-hint">← Faites glisser pour découvrir tous nos soins →</p>
+    <div class="tarif-cta reveal">
     <h3>Prête à en discuter ?</h3>
     <p>Un devis personnalisé est établi lors de la consultation. Tous les tarifs sont en CHF. Réponse rapide par WhatsApp.</p>
     <a onclick="gtag('event','whatsapp_click',{'event_category':'contact','event_label':'whatsapp_rdv_bottom'});" href="https://wa.me/41789053650?text=Bonjour%20Dr.%20Sillard%2C%20je%20souhaite%20prendre%20rendez-vous." class="btn-hero-cta" style="margin:0 auto"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.847L0 24l6.347-1.498A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.847 0-3.587-.498-5.089-1.371l-.361-.215-3.766.89.928-3.668-.234-.374A9.958 9.958 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Prendre rendez-vous</a>
@@ -233,5 +288,12 @@ footer{background:#2C2C2C}
   document.querySelectorAll('.reveal').forEach(function(el){
     new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');o.unobserve(e.target);}});},{threshold:.1}).observe(el);
   });
+  function tarifsScroll(dir){
+    const track=document.getElementById('tarifsCarousel');
+    if(!track)return;
+    const card=track.querySelector('.tcard');
+    const step=card?(card.getBoundingClientRect().width+16):300;
+    track.scrollBy({left:dir*step,behavior:'smooth'});
+  }
 </script>
 </body></html>
